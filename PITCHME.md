@@ -6,12 +6,44 @@ vs
 
 ---
 
-## modeling delay 
+# modeling delay 
 
 vs 
 
-## modeling time
+# modeling time
 
 +++
 
-# Lorem ipsum
+# Promise
+
+---
+
+# Promise over time
+
+|| || `--^` || `-----^` ||
+| `---B` | `---B` | `-----B` |
+| `---#` | `---#` | `-----#` |
+
+---
+
+# Promise operators
+
++++
+
+# Observables (RxJs)
+
+---
+
+# Observables - simple operators
+
+---
+
+# Observables - higher order operators
+
++++
+
+# Cold (lazy) observables - unicast
+
+---
+
+# Hot observables - multicast

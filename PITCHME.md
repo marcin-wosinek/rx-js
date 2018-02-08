@@ -1,8 +1,16 @@
-# Promises vs observables
+# Promises 
+
+vs
+
+# observables
 
 ---
 
-## modeling delay vs modeling time
+## modeling delay 
+
+vs 
+
+## modeling time
 
 +++
 

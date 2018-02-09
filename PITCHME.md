@@ -45,7 +45,7 @@ promise.then((value) => {
 | `---B` | `---B` | `-----B` |
 | `---#` | `---#` | `-----#` |
 
-`-` time; `^` then; `B` message; `#` error
+`-` time  `^` then  `B` message `#` error
 
 +++
 
@@ -57,7 +57,9 @@ promise.then((value) => {
 | `--B`  | `-A` | `---(ABC)`  |
 | `---C` | | |
 
-`-` time; `A` message; `()` synced events 
+`-` time 
+`A` message 
+`()` synced events 
 
 ---
 

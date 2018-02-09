@@ -4,7 +4,7 @@ vs
 
 # observables
 
----
++++
 
 # modeling delay 
 
@@ -12,7 +12,7 @@ vs
 
 # modeling time
 
-+++
+---
 
 # Promise
 
@@ -36,7 +36,7 @@ promise.then((value) => {
 }
 ```
 
----
++++
 
 # Promise over time
 
@@ -47,7 +47,7 @@ promise.then((value) => {
 
 `-` - time; `^` - then; `B` - message; `#` - error
 
----
++++
 
 # Promise operators
 
@@ -60,15 +60,15 @@ promise.then((value) => {
 `-` - time; `A` - message; `()` - synced events 
 
 
-+++
+---
 
 # Observables (RxJs)
 
----
++++
 
 # Observables - simple operators
 
----
++++
 
 # Observables - higher order operators
 
@@ -76,6 +76,6 @@ promise.then((value) => {
 
 # Cold (lazy) observables - unicast
 
----
++++
 
 # Hot observables - multicast

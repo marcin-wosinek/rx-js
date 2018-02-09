@@ -1,4 +1,4 @@
-# Promises 
+# Promises
 
 vs
 
@@ -6,9 +6,9 @@ vs
 
 +++
 
-# modeling delay 
+# modeling delay
 
-vs 
+vs
 
 # modeling time
 
@@ -55,11 +55,7 @@ promise.then((value) => {
 |--------|--------|----------|
 | `-A` <br /> `--B` <br /> `---C` | <br />  `-A` | <br />  `---(ABC)`  |
 
-`-` time 
-
-`A` message 
-
-`()` synced events 
+`-` time • `A` message • `()` synced events
 
 ---
 
@@ -76,13 +72,7 @@ rx.Observable.fromEvent(element, 'click');
 // ---e--e-------e----
 ```
 
-`-` time
-
-`e` event
-
-`()` synced events
-
-`|` complete
+`-` time • `e` event • `()` synced events • `|` complete
 
 
 +++

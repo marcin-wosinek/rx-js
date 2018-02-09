@@ -16,19 +16,6 @@ vs
 
 # Promise
 
----
-
-# Promise over time
-
-|        | `--^`  | `-----^` |
-|--------|--------|----------|
-| `---B` | `---B` | `-----B` |
-| `---#` | `---#` | `-----#` |
-
----
-
-# Promise operators
-
 ```
 try {
   let value = doStuff();
@@ -48,6 +35,30 @@ promise.then((value) => {
   /* .. clean up .. */
 }
 ```
+
+---
+
+# Promise over time
+
+|        | `--^`  | `-----^` |
+|--------|--------|----------|
+| `---B` | `---B` | `-----B` |
+| `---#` | `---#` | `-----#` |
+
+`-` - time; `^` - then; `B` - message; `#` - error
+
+---
+
+# Promise operators
+
+|        | promise.race() | promise.all() |
+|--------|--------|----------|
+| `-A`   | | |
+| `--B`  | `-A` | `---(ABC)`  |
+| `---C` | | |
+
+`-` - time; `A` - message; `()` - synced events 
+
 
 +++
 

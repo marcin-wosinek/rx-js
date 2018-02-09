@@ -45,7 +45,7 @@ promise.then((value) => {
 | `---B` | `---B` | `-----B` |
 | `---#` | `---#` | `-----#` |
 
-`-` - time; `^` - then; `B` - message; `#` - error
+`-` time; `^` then; `B` message; `#` error
 
 +++
 
@@ -57,12 +57,24 @@ promise.then((value) => {
 | `--B`  | `-A` | `---(ABC)`  |
 | `---C` | | |
 
-`-` - time; `A` - message; `()` - synced events 
-
+`-` time; `A` message; `()` synced events 
 
 ---
 
 # Observables (RxJs)
+
+```
+rx.Observable.of(1, 2, 3);
+// (1,2,3)|
+
+rx.Observable.interval(1000);
+// 0---1---2---3---4--
+
+rx.Observable.fromEvent(element, 'click');
+// ---e--e-------e----
+```
+
+`-` time; `e` event; `()` synced events; `|` complete
 
 +++
 

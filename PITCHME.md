@@ -29,6 +29,26 @@ vs
 
 # Promise operators
 
+```
+try {
+  let value = doStuff();
+
+  /* .. use the value .. */
+} catch (e) {
+  /* .. clean up .. */
+}
+```
+
+```
+let promise = doStuff();
+
+promise.then((value) => {
+  /* .. use the value .. */
+}).catch((e) => {
+  /* .. clean up .. */
+}
+```
+
 +++
 
 # Observables (RxJs)

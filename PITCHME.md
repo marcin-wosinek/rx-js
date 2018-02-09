@@ -53,9 +53,9 @@ promise.then((value) => {
 
 |        | promise.race() | promise.all() |
 |--------|--------|----------|
-| `-A`   | | |
-| `--B`  | `-A` | `---(ABC)`  |
-| `---C` | | |
+| `-A` 
+ `--B`  
+ `---C` | `-A` | `---(ABC)`  |
 
 `-` time 
 `A` message 

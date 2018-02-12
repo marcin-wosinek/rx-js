@@ -133,7 +133,7 @@ source2.retry(2)
 
 +++
 
-# Combination op.
+# Combination
 
 ```js
 source1 = ..

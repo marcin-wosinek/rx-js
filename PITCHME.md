@@ -176,10 +176,10 @@ click$ = Rx.Observable.fromEvent(document, 'click')
 click$.subscribe((x) => console.log(x)); // gets all clicks
 
 /* .. wait 5s ..  */
-click$.subscribe((x) => console.log(x)); // get clicks from 5s
+click$.subscribe((x) => console.log(x)); // clicks from 5s
 
 /* .. wait 5s ..  */
-click$.subscribe((x) => console.log(x)); // get clicks from 10s
+click$.subscribe((x) => console.log(x)); // clicks from 10s
 ```
 
 +++
@@ -219,21 +219,21 @@ scheduler.flush();
 // no checks meaningfull here
 ```
 
-+++
+---
 
 # Resources
 
----
++++
 
 # [rxmarbles.com](http://rxmarbles.com)
 ![screenshot of rxmarbles.com](assets/rxmarbles.com.png)
 
----
++++
 
 # [www.learnrxjs.io](https://www.learnrxjs.io)
 ![screenshot of learnrxjs.io](assets/learnrxjs.io.png)
 
-+++
+---
 
 # Summary
 

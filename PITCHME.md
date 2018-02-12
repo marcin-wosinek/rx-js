@@ -16,7 +16,7 @@ vs
 
 # Promise
 
-```
+```js
 try {
   let value = doStuff();
 
@@ -26,7 +26,7 @@ try {
 }
 ```
 
-```
+```js
 let promise = doStuff();
 
 promise.then((value) => {
@@ -61,7 +61,7 @@ promise.then((value) => {
 
 # Observables
 
-```
+```js
 rx.Observable.of(1, 2, 3);
 // (1,2,3)|
 
@@ -79,7 +79,7 @@ rx.Observable.fromEvent(element, 'click');
 
 # Transformation operators
 
-```
+```js
 source = ..
 // 0-1-2-3-4|
 
@@ -97,7 +97,7 @@ source.scan((x, y) => x + y);
 
 # Filter operators
 
-```
+```js
 source = ..
 // 0-1-2-3-4|
 
@@ -113,7 +113,7 @@ source.take(3);
 
 # Repeat & retry
 
-```
+```js
 source1 = ..
 // 0--1--2--3--4|
 
@@ -131,7 +131,7 @@ source2.retry(2)
 
 # Combination operators
 
-```
+```js
 source1 = ..
 // 0--1--2--3--4|
 source2 = ..

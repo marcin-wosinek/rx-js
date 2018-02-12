@@ -146,8 +146,66 @@ source1.concat(source2)
 
 ---
 
-# Cold (lazy) observables - unicast
+# Cold observables - unicast
+
+```js
+timer$ = rx.Observable.interval(1000);
+
+timer$.subscribe((x) => console.log(x)); // clock 1
+
+/* .. */ wait 5s
+timer$.subscribe((x) => console.log(x)); // clock 2
+
+/* .. */ wait 5s
+timer$.subscribe((x) => console.log(x)); // clock 3
+```
 
 +++
 
 # Hot observables - multicast
+
+```js
+click$ = Rx.Observable.fromEvent(document, 'click')
+
+click$.subscribe((x) => console.log(x)); // gets all clicks
+
+/* .. */ wait 5s
+click$.subscribe((x) => console.log(x)); // get clicks starting from 5s
+
+/* .. */ wait 5s
+click$.subscribe((x) => console.log(x)); // get clicks starting from 10s
+```
+
++++
+
+# Cold => hot
+
+```js
+timer$ = rx.Observable.interval(1000);
+
+sharedTimer$ timer$.
+
+sharedTimer$.subscribe((x) => console.log(x)); // clock 1
+
+/* .. */ wait 5s
+sharedTimer$.subscribe((x) => console.log(x)); // clock 1, delayed subscription
+```
+
+---
+
+# Testing
+
+```js
+scheduler = rx.TestScheduler();
+scheduler.assertDeepEqual = function(actual, expected) { /* .. */ }
+
+mock$ = rx.scheduler.createColdObservable('--a--a--a');
+
+test$ = method(mock$);
+
+scheduler.expectObservable(test$).toBe('--b--b--b');
+scheduler.expectSubscriptions(mock$).toBe(['^']);
+
+// RUN!
+scheduler.flush();
+```

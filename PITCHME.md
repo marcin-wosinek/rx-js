@@ -194,7 +194,7 @@ sharedTimer$ timer$.
 sharedTimer$.subscribe((x) => console.log(x)); // clock 1
 
 /* .. wait 5s ..  */
-sharedTimer$.subscribe((x) => console.log(x)); 
+sharedTimer$.subscribe((x) => console.log(x));
   // clock 1, delayed subscription
 ```
 
@@ -237,4 +237,6 @@ scheduler.flush();
 
 # Summary
 
-* kk
+* powerful tool for dealing with data that changes over time
+* one or two orders of magnitude more complicated then promises
+* worth it

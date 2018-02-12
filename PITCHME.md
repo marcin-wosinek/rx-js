@@ -223,6 +223,15 @@ scheduler.flush();
 
 # Resources
 
+---
+
+# [rxmarbles.com](http://rxmarbles.com)
+![screenshot of rxmarbles.com](assets/rxmarbles.com.png)
+
+---?image=assets/learnrxjs.io.png
+
+# [www.learnrxjs.io)[https://www.learnrxjs.io)
+
 +++
 
 # Summary

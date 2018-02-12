@@ -128,12 +128,12 @@ source2 = ..
 // 0---1---2---3#
 
 source2.retry(2)
-// 0---1---2---30---1---2---3#
+// 0---1---2---30---1---2---30---1---2---3#
 ```
 
 +++
 
-# Combination operators
+# Combination op.
 
 ```js
 source1 = ..
@@ -159,10 +159,10 @@ timer$ = rx.Observable.interval(1000);
 
 timer$.subscribe((x) => console.log(x)); // clock 1
 
-/* .. */ wait 5s
+/* .. wait 5s ..  */
 timer$.subscribe((x) => console.log(x)); // clock 2
 
-/* .. */ wait 5s
+/* .. wait 5s ..  */
 timer$.subscribe((x) => console.log(x)); // clock 3
 ```
 
@@ -175,11 +175,11 @@ click$ = Rx.Observable.fromEvent(document, 'click')
 
 click$.subscribe((x) => console.log(x)); // gets all clicks
 
-/* .. */ wait 5s
-click$.subscribe((x) => console.log(x)); // get clicks starting from 5s
+/* .. wait 5s ..  */
+click$.subscribe((x) => console.log(x)); // get clicks from 5s
 
-/* .. */ wait 5s
-click$.subscribe((x) => console.log(x)); // get clicks starting from 10s
+/* .. wait 5s ..  */
+click$.subscribe((x) => console.log(x)); // get clicks from 10s
 ```
 
 +++
@@ -193,8 +193,9 @@ sharedTimer$ timer$.
 
 sharedTimer$.subscribe((x) => console.log(x)); // clock 1
 
-/* .. */ wait 5s
-sharedTimer$.subscribe((x) => console.log(x)); // clock 1, delayed subscription
+/* .. wait 5s ..  */
+sharedTimer$.subscribe((x) => console.log(x)); 
+  // clock 1, delayed subscription
 ```
 
 ---
@@ -212,6 +213,16 @@ test$ = method(mock$);
 scheduler.expectObservable(test$).toBe('--b--b--b');
 scheduler.expectSubscriptions(mock$).toBe(['^']);
 
-// RUN!
+// RUN! nothing checked before this point
 scheduler.flush();
+
+// no checks meaningfull here
 ```
+
++++
+
+# Resources
+
++++
+
+# Summary

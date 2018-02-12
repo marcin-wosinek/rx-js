@@ -45,7 +45,7 @@ promise.then((value) => {
 | `---B` | `---B` | `-----B` |
 | `---#` | `---#` | `-----#` |
 
-`-` time  `^` then  `B` message `#` error
+`-` time • `^` then • `B` message • `#` error
 
 +++
 
@@ -93,6 +93,8 @@ source.scan((x, y) => x + y);
 // 0-1-3-6-10|
 ```
 
+& `concatMap`, `mergeMap`, `switchMap` - in total 23
+
 +++
 
 # Filter operators
@@ -108,6 +110,8 @@ source.take(3);
 // 0-1-2|
 
 ```
+
+& `debouceTime`, `distinctUntilChanged`, `takeUntil` - in total 17
 
 +++
 
@@ -143,6 +147,8 @@ source1.merge(source2)
 source1.concat(source2)
 // 0--1--2--3--40---1---2---3|
 ```
+
+& `combineLatest`, `startWith`, `withLatestFrom` - in total 12
 
 ---
 

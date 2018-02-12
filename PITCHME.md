@@ -228,10 +228,13 @@ scheduler.flush();
 # [rxmarbles.com](http://rxmarbles.com)
 ![screenshot of rxmarbles.com](assets/rxmarbles.com.png)
 
----?image=assets/learnrxjs.io.png
+---
 
-# [www.learnrxjs.io)[https://www.learnrxjs.io)
+# [www.learnrxjs.io](https://www.learnrxjs.io)
+![screenshot of learnrxjs.io](assets/learnrxjs.io.png)
 
 +++
 
 # Summary
+
+* kk

@@ -38,7 +38,7 @@ promise.then((value) => {
 
 +++
 
-# Promise over time
+# Promises over time
 
 |        | `--^`  | `-----^` |
 |--------|--------|----------|
@@ -49,7 +49,7 @@ promise.then((value) => {
 
 +++
 
-# Promise operators
+# Operators
 
 |        | promise.race() | promise.all() |
 |--------|--------|----------|
@@ -59,7 +59,7 @@ promise.then((value) => {
 
 ---
 
-# Observables (RxJs)
+# Observables
 
 ```
 rx.Observable.of(1, 2, 3);
@@ -77,7 +77,7 @@ rx.Observable.fromEvent(element, 'click');
 
 +++
 
-# Observables - transformation operators
+# Transformation operators
 
 ```
 source = ..
@@ -95,7 +95,7 @@ source.scan((x, y) => x + y);
 
 +++
 
-# Observables - filter operators
+# Filter operators
 
 ```
 source = ..
@@ -111,7 +111,7 @@ source.take(3);
 
 +++
 
-# Observables - repeat & retry
+# Repeat & retry
 
 ```
 source1 = ..
@@ -129,7 +129,7 @@ source2.retry(2)
 
 +++
 
-# Observables - combination operators
+# Combination operators
 
 ```
 source1 = ..
